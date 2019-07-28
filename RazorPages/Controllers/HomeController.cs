@@ -12,7 +12,7 @@ namespace RazorPages.Controllers
     {
         public IActionResult Index()
         {
-            gdgd
+            ViewBag.Test = "";
             return View();
         }
 
