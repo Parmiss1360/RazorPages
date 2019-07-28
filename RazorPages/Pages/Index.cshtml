@@ -1,0 +1,24 @@
+﻿@page
+@model RazorPages.Pages.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+
+<h2>@Model.Message</h2>
+<br />
+@*<a asp-page="/Contact" asp-route-id="1">Go To Contact Page</a>*@
+<br />
+
+@{ 
+    var Parms = new Dictionary<string, string>
+    {
+        {"id","1"},
+        {"username","arezoo" }
+    };
+}
+
+<a asp-page="/Contact" asp-all-route-data="@Parms">Go To Contact Page</a>
+<br />
+<a asp-page="/Publisher/Index" asp-area="Admin">Go To Amin/Publisher/Index Page</a>
+<br />
+<p>@DateTime.Now</p>

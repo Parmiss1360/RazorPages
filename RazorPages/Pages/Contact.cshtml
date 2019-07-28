@@ -1,0 +1,21 @@
+﻿@*@page "{id:int?}"*@
+@*@page "{id:double?}"*@
+@*@page "{id:max(1000)}"*@
+
+@*@page "{username:alpha:minLength(3):maxLength(8)}"*@
+
+@*@page "{handler?}"*@
+
+@page "{id?}/{handler?}"
+
+
+
+@model RazorPages.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<h2>Contact Page</h2>
+<h2>@Model.id</h2>
+<h2>@Model.username</h2>
+
