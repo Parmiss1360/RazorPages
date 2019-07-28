@@ -12,6 +12,7 @@ namespace RazorPages.Controllers
     {
         public IActionResult Index()
         {
+            gdgd
             return View();
         }
 
